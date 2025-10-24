@@ -52,9 +52,6 @@ int main(void)
 	{
 		// Baca DHT22
 		uint8_t status = DHT22_read(&temp, &hum);
-		
-		// Kalibrasi kelembaban saja
-		hum = hum / 40;
 
 		if (status) // Berhasil
 		{
